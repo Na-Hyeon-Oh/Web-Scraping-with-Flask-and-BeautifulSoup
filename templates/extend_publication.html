@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>problem_4</title>
+  </head>
+  <body>
+    <h1>Week 15 Assignment</h1>
+    <h1>
+      <ul>
+        <li><a href="./finance">Problem 1</a></li>
+        <li><a href="./covid">Problem 2</a></li>
+        <li><a href="./publication">Problem 3</a></li>
+      </ul>
+    </h1>
+
+    <h1 style="text-align:center;">iNetworking Lab</h1>
+    <table style="width:80%;margin:auto;text-align:center;">
+    <tr>
+        <th>
+            <h4>iNetworking Lab's publication</h4>
+        </th>
+        <th>
+            <form method="GET" action="/publication">
+                <label>select year: </label>
+                <input type="text" name="year"/>
+                <input type="submit" value="search">
+            </form>
+        </th>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align: left;">
+            <!----------------- TODO ------------------->
+            <!-- Jinja code -->
+            {% if result %}
+            {% if result|length > 1 %}
+            {% for item in result %}
+            <h3 style="padding: 0 200px"> {{ item }}</h3>
+            {% endfor %}
+            {% else %}
+            <h2 style = "text-align: center;"> {{ result[0] }} </h2>
+            {% endif %}
+            {% endif %}
+            <!------------------ END ------------------->
+        </td>
+    </tr>
+    </table>
+    <br/>
+    <br></br>
+  </body>
+</html>

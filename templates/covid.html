@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>problem_2</title>
+  </head>
+  <body>
+    <table style="width:80%;margin:auto;text-align:center;">
+      <tr>
+        <th>Country</th>
+        <th>Total Cases</th>
+        <th>Total Deaths</th>
+      </tr>
+
+      <!-- Jinja code -->
+      {% if result %}
+      <tr>
+        <td> {{ result[0] }} </td>
+        <td> {{ result[1] }} </td>
+        <td> {{ result[2] }} </td>
+      </tr>
+      <tr>
+        <td> {{ result[3] }} </td>
+        <td> {{ result[4] }} </td>
+        <td> {{ result[5] }} </td>
+      </tr>
+      <tr>
+        <td> {{ result[6] }} </td>
+        <td> {{ result[7] }} </td>
+        <td> {{ result[8] }} </td>
+      </tr>
+      <tr>
+        <td> {{ result[9] }} </td>
+        <td> {{ result[10] }} </td>
+        <td> {{ result[11] }} </td>
+      </tr>
+      <tr>
+        <td> {{ result[12] }} </td>
+        <td> {{ result[13] }} </td>
+        <td> {{ result[14] }} </td>
+      </tr>
+      {% endif %}
+    </table>
+  </body>
+</html>
